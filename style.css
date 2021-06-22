@@ -10,6 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(31, 28, 28);
 }
 body h1 {
   color: #282f59;
@@ -41,7 +42,7 @@ body a {
 }
 /* header */
 header {
-  background-image: url("header-bg.png");
+  background-image: url("./images/header-bg.png");
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -51,7 +52,7 @@ header {
   left: 0;
   display: flex;
   width: 100%;
-  padding: 10px 50px;
+  padding: 10px 20px;
   align-items: center;
 }
 .navbar ul {
@@ -97,7 +98,7 @@ header {
   font-size: 7vmin;
   margin-bottom: 30px;
   margin-top: 9rem;
-  color: #4642ff;
+  color: #c5ff25;
 }
 .header-content p {
   margin-bottom: 10px;
@@ -116,4 +117,78 @@ header {
 }
 .hero-img img {
   margin-left: 80px;
+}
+@media (max-width: 600px) {
+  .navbar ul li {
+    margin: 0 3px;
+  }
+  .navbar ul li a {
+    font-size: 0.7rem;
+  }
+  .logo {
+    width: 80px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .header-content,
+  .hero-img {
+    flex-basis: 100%;
+    width: 100vw;
+    padding: 1rem 2rem;
+  }
+  .header-content {
+    content: "";
+    margin-top: 1rem;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+  }
+  .header-content p {
+    margin-bottom: 2rem;
+  }
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+  }
+}
+@media (max-width: 477px) {
+  .navbar ul li {
+    margin: 0 2px;
+  }
+  .navbar ul li a {
+    font-size: 0.5rem;
+  }
+  .logo {
+    width: 60px;
+  }
+}
+@media (max-width: 477px) {
+  .navbar ul li {
+    margin: 0 1px;
+  }
+  .navbar ul li a {
+    font-size: 0.5rem;
+  }
+  .logo {
+    width: 40px;
+  }
+  .btn {
+    display: block;
+    width: fit-content;
+    margin: 10px 0;
+  }
+  .hero-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-img {
+    padding: 0rem 0rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+  }
 }
