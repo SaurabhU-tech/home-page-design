@@ -42,7 +42,7 @@ body a {
 }
 /* header */
 header {
-  background-image: url("./header-bg.png");
+  background-image: url("header-bg.png");
   background-repeat: no-repeat;
   min-height: 100vh;
 }
